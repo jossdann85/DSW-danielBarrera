@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROPIEDADES BÁSICAS DE CSS, DISPLAY: INLINE, BLOCK, INLINE-BLOCK</title>
+</head>
+    <H1>PROPIEDADES BÁSICAS DE CSS, DISPLAY: INLINE, BLOCK, INLINE-BLOCK</H1>
+    <H3>OBJETIVOS</H3>
+    <H5>GENERAL</H5>
+    <p>Comprender los conceptos fundamentales del lenguaje de estilos en cascada, CSS, su aplicación en el diseño de sitios web</p>
+    <H5>Específicos</H5>
+    <ol>
+        <li>Aprende y aplica conceptos de CSS en el diseño y creación de un sitio web.</li>
+        <li>Desarrolla habilidades basadas en la lectura de aprendizaje y en la observación de cómo se aplica los estilos en una página web.</li>
+        <li>Interpreta correctamente cada concepto y sabe aplicar correctamente los estilos en una página web.</li>
+    </ol>
+    <h5>Materiales</h5>
+    <ul>
+        <li>¿Que es CSS?</li>
+        <a href="https://www.hostinger.co/tutoriales/que-es-css/">Tutoriales Hostinger</a>
+        <li>Propiedades básicas</li>
+        <a href="https://www.laurachuburu.com.ar/tutoriales/propiedades-css.php">laura chuburu </a>
+        <li>propiedades css: inline block vs float </li>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UIo1p5s1BAY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br> 
+        <li>propiedad display</li>
+        <a href="https://developer.mozilla.org/es/docs/Web/CSS/display">MDN web docs</a>
+        <br>
+        <a href="https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=738:propiedad-display-css-inline-block-none-list-item-ejercicios-ejemplos-resueltos-en-codigo-css-cu01033d&catid=75&Itemid=203">Aprendeaprogramar.com</a>
+    </ul>
+    <h5>Contenido</h5>
+    
+    <h5>¿Que es CSS?</h5>
+    <p>CSS (en inglés Cascading Style Sheets) es lo que se denomina lenguaje de hojas de estilo en cascada y se usa para estilizar elementos escritos en un lenguaje de marcado como HTML. CSS separa el contenido de la representación visual del sitio.</p>
+    <h5>Un poco de historia</h5>
+    <p>CSS fue desarrollado por W3C (World Wide Web Consortium) en 1996 por una razón muy sencilla. HTML no fue diseñado para tener etiquetas que ayuden a formatear la página. Está hecho solo para escribir el marcado para el sitio.
+        Se incluyeron etiquetas como <font> en HTML versión 3.2, y esto les causó muchos problemas a los desarrolladores. Dado que los sitios web tenían diferentes fuentes, fondos de colores y estilos, el proceso de reescribir el código fue largo, doloroso y costoso. Por lo tanto, CSS fue creado por W3C para resolver este problema.  
+    </p>
+    <p>La relación entre HTML y CSS es muy fuerte. Dado que HTML es un lenguaje de marcado (es decir, constituye la base de un sitio) y CSS enfatiza el estilo (toda la parte estética de un sitio web), van de la mano.</p>
+    <h5>Propiedades Básicas</h5>
+    <ul>
+        <li>Font-family:</li>
+        <p>Define la familia tipográfica. Es conveniente poner una lista de dos o tres tipografías separadas por coma, porque si el usuario no tiene instalada la tipografía que nosostros elegimos, el navegador opta por mostrar la siguiente que debería ser una similar, si tampoco la tiene instalada, mostrará la tipografía por defecto.</p>
+        <li>font-size:</li>
+        <p>Define el tamaño de la fuente y el valor se puede escribir en pixels o en ems. En este momento se recomienda usar ems. Los dos son valores relativos, el pixel es un valor relativo a la resolución de la pantalla, pero el em es relativo al tamaño de la fuente definida por el usuario. Si el usuario no cambió la configuración, el valor por defecto de los textos en todos los navegadores es de 16px. Entonces 1em = 16px.</p>
+        <li>color:</li>
+        <p>Define el color de la tipografía. Los colores se pueden escribir de 3 formas distinas: con sistema hexadecimal, por ejemplo: #FF0000 (es rojo). Con los nombres de los colores (más limitado) por ejemplo: black, red, green. O usando RGB, esta paleta permite agregar el canal alfa para hacer transparencias.</p>
+        <li>width:</li>
+        <p>Define el ancho de un elemento, el valor se puede escribir en pixels, ems o porcentaje.</p>
+        <li>Max-width o min-width: </li>
+        <p>Definen el ancho máximo o mínimo de un elemento. Muy importante en sitios adaptables</p>
+        <li>Height:</li>
+        <p>Define el alto de un elemento, el valor se puede escribir en pixels, ems o porcentaje.</p>
+        <li>Max-height o min-height: </li>
+        <p>Definen el alto máximo o mínimo de un elemento. Muy importante en sitios adaptables</p>
+        <li>Padding:</li>
+        <p>Es la distancia desde el borde de un elemento hasta su contenido.</p>
+        <li>Margin:</li>
+        <p>Es la distancia entre un elemento y otro (desde el borde de un elemento hacia afuera)</p>
+        <li>Border:</li>
+        <p>Define el borde de un elemento, su color, su estilo y grosor.</p>
+        <li>Background: </li>
+        <p>Define los fondos de un objeto. El fondo puede ser una imagen o un color. El color puede ser pleno o degradado. La imagen se puede repetir formando una trama (es lo que ocurre por defecto) o se puede especificar que no repita y que se coloque en determinada posición.</p>
+    </ul>
+    <h5>propiedad display</h5>
+    <p>La propiedad CSS display especifica si un elemento es tratado como block or inline element y el diseño usado por sus hijos, como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible). </p>
+    <P>Formalmente la propiedad display establece los tipos de visualización interna y externa de un elemento. La tipo externa establece la participacion de un elemento en flow layout; la tipo interna establece el layout(Diseño) de los hijos. Algunos valores de display estan totalmente definidos con sus especificaciones propias; por ejemplo el detalle de que pasa cuando display: flex es declarado y definido en la especificacion de Modelo Flexible de Caja(Flexible Box Model specification) de CSS. Vea la siguientes tablas para mas especificaciones individuales.</P>
+    <P>Además de los Diferentes Tipos de caja de Visualizacion, el valor de none permite Desactivar la Visualizacion DE UN Elemento; cuando no se utiliza none, todos los elementos descendentes también quedan desactivados. El documento se procesa como si el elemento no existiera en el árbol de documentos.</P>
+    <P>Los elementos HTML se dividen en dos grandes tipos: elementos block que tienden a ocupar el espacio disponible a todo lo ancho y en caso de existir varios se sitúan unos debajo de otros y elementos inline que ocupan el espacio necesario dentro de una línea y en caso de existir varios se sitúan uno junto a otro en la misma línea (siempre que haya espacio). La propiedad display nos permite alterar el tipo de caja con que se muestra un elemento.</P>
+    <P>Sabemos que por ejemplo los elementos tipo título como h1 son elementos block, y por tanto de forma “natural” tienden a ocupar todo el ancho de la página. Por el contrario elementos como los links a o las imágenes son elementos inline. Veamos cómo la propiedad display permite alterar estas cualidades.</P>
+    <P>Esta propiedad nos permite establecer el tipo de caja que el navegador empleará para visualizar un elemento, siendo los tipos más comunes inline y block, aunque existen bastantes otros.</P>
+    <h5>Diseño del sitio</h5>
+    <img src="G:\Aerp\Documentos\UNAD_2020\DISEÑO DE SITIOS WEB\Local\DSW-danielBarrera\imagen\mockup.jpg" alt="">
+<body>
+    
+</body>
+</html>
