@@ -50,7 +50,7 @@
 <table>
     <tr>
         <td>
-            <aside >
+            <aside>
                 <blockquote  class="twitter-tweet" ><p lang="es" dir="ltr">La UNAD y la <a href="https://twitter.com/DefensoriaCol?ref_src=twsrc%5Etfw">@DefensoriaCol</a> celebran la firman de un convenio que permite a funcionarios acceder a los distintos niveles de educación con mayor facilidad y descuento. Además, la firma de este convenio beneficia la comunidad y el país.<br>Más info👉🏼 <a href="https://t.co/k0qHDEekEl">https://t.co/k0qHDEekEl</a> <a href="https://t.co/x6ipsVYD34">pic.twitter.com/x6ipsVYD34</a></p>&mdash; Universidad UNAD (@UniversidadUNAD) <a href="https://twitter.com/UniversidadUNAD/status/1324113314377617417?ref_src=twsrc%5Etfw">November 4, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </aside>
         </td>
@@ -58,29 +58,77 @@
             
             <td>
                 <h5 class="titulo">
-                    OBJETIVOS GENERALES
+                    PROPIEDADES BÁSICAS
                 </h5>
-                <p>
-                    Comprender los conceptos fundamentales del lenguaje de estilos en cascada, CSS, su aplicación en el diseño de sitios web.
-                </p>
-                <h5 class="titulo">
-                    OBJETIVOS ESPECIFICOS
-                </h5>
-                <ol>
-                    <li>Aprende y aplica conceptos de CSS en el diseño y creación de un sitio web.</li><br>
-                    <li>Desarrolla habilidades basadas en la lectura de aprendizaje y en la observación de cómo se aplica los estilos en una página web.</li><br>
-                    <li>Interpreta correctamente cada concepto y sabe aplicar correctamente los estilos en una página web.</li>
-                </ol>
-                <h5 class="titulo">
-                    TEMAS TRATADOS
-                </h5>
-                <ul>
-                    <li>¿Qué es CSS?</li><br>
-                    <li>Propiedades Básicas</li><br>
-                    <li>Propiedad CSS: inline block vs float</li><br>
-                    <li>Propiedad Display</li><br>
-
+                <ul>                    
+                    <li>Font-family: <br>
+                        <p>Define la familia tipográfica. Es conveniente poner una lista de dos o tres tipografías separadas por coma, porque si el usuario no tiene instalada la tipografía que nosostros elegimos, el navegador opta por mostrar la siguiente que debería ser una similar, si tampoco la tiene instalada, mostrará la tipografía por defecto.</p>
+                    </li>
+                    <br>
+                    <li> font-size: <br>   
+                        <p>Define el tamaño de la fuente y el valor se puede escribir en pixels o en ems. En este momento se recomienda usar ems. Los dos son valores relativos, el pixel es un valor relativo a la resolución de la pantalla, pero el em es relativo al tamaño de la fuente definida por el usuario. Si el usuario no cambió la configuración, el valor por defecto de los textos en todos los navegadores es de 16px. Entonces 1em = 16px.</p>
+                    </li>
+                    <li> color: <br>
+                        <p>Define el color de la tipografía. Los colores se pueden escribir de 3 formas distinas: con sistema hexadecimal, por ejemplo: #FF0000 (es rojo). Con los nombres de los colores (más limitado) por ejemplo: black, red, green. O usando RGB, esta paleta permite agregar el canal alfa para hacer transparencias.</p>
+                    </li>
+                    <li> width: <br>
+                        <p>Define el ancho de un elemento, el valor se puede escribir en pixels, ems o porcentaje.</p>
+                    </li>
+                    <li> Max-width o min-width: <br>
+                        <p>Definen el ancho máximo o mínimo de un elemento. Muy importante en sitios adaptables</p>
+                    </li>
+                    <li> Height: <br>
+                        <p>Define el alto de un elemento, el valor se puede escribir en pixels, ems o porcentaje.</p>
+                    </li>
+                    <li> Max-height o min-height: <br>
+                        <p>Definen el alto máximo o mínimo de un elemento. Muy importante en sitios adaptables</p>
+                    </li>
+                    <li> Padding: <br>
+                        <p>Es la distancia desde el borde de un elemento hasta su contenido.</p>
+                    </li>
+                    <li> Margin: <br>
+                        <p>Es la distancia entre un elemento y otro (desde el borde de un elemento hacia afuera)</p>
+                    </li>
+                    <li> Border: <br>
+                        <p>Define el borde de un elemento, su color, su estilo y grosor.</p>
+                    </li>
+                    <li> Background: <br>
+                        <p>Define los fondos de un objeto. El fondo puede ser una imagen o un color. El color puede ser pleno o degradado. La imagen se puede repetir formando una trama (es lo que ocurre por defecto) o se puede especificar que no repita y que se coloque en determinada posición.</p>
+                    </li>
+                    <p>
+                        <h6>tomado de internet: 
+                            <a href="https://www.laurachuburu.com.ar/tutoriales/propiedades-css.php">https://www.laurachuburu.com.ar/tutoriales/propiedades-css.php</a>
+                        </h6>
+                    </p>
                 </ul>
+
+
+
+                <h5 class="titulo">
+                    PROPIEDAD DISPLAY
+                </h5>
+                <P>
+                    La propiedad CSS display especifica si un elemento es tratado como block or inline element y el diseño usado por sus hijos, como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible).
+                </P>
+                <P>
+                    Formalmente la propiedad display establece los tipos de visualización interna y externa de un elemento. La tipo externa establece la participacion de un elemento en flow layout; la tipo interna establece el layout(Diseño) de los hijos. Algunos valores de display estan totalmente definidos con sus especificaciones propias; por ejemplo el detalle de que pasa cuando display: flex es declarado y definido en la especificacion de Modelo Flexible de Caja(Flexible Box Model specification) de CSS. Vea la siguientes tablas para mas especificaciones individuales. 
+                </P>
+                <P>
+                    Además de los Diferentes Tipos de caja de Visualizacion, el valor de none permite Desactivar la Visualizacion DE UN Elemento; cuando no se utiliza none, todos los elementos descendentes también quedan desactivados. El documento se procesa como si el elemento no existiera en el árbol de documentos.
+                </P>
+                <P>
+                    Los elementos HTML se dividen en dos grandes tipos: elementos block que tienden a ocupar el espacio disponible a todo lo ancho y en caso de existir varios se sitúan unos debajo de otros y elementos inline que ocupan el espacio necesario dentro de una línea y en caso de existir varios se sitúan uno junto a otro en la misma línea (siempre que haya espacio). La propiedad display nos permite alterar el tipo de caja con que se muestra un elemento.
+                </P>
+                <P>
+                    Sabemos que por ejemplo los elementos tipo título como h1 son elementos block, y por tanto de forma “natural” tienden a ocupar todo el ancho de la página. Por el contrario elementos como los links a o las imágenes son elementos inline. Veamos cómo la propiedad display permite alterar estas cualidades.
+                </P>
+                <P>
+                    Esta propiedad nos permite establecer el tipo de caja que el navegador empleará para visualizar un elemento, siendo los tipos más comunes inline y block, aunque existen bastantes otros.
+                </P>
+                <br>
+                    <h6>tomado de internet: 
+                        <a href="https://developer.mozilla.org/es/docs/Web/CSS/display">https://developer.mozilla.org/es/docs/Web/CSS/display</a>
+                    </h6>
             </td>
             <td>
                 
