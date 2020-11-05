@@ -1,0 +1,38 @@
+.body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+   
+}
+
+.menu{
+    width: 100%;
+    padding: 10px;
+    font-size: x-large;
+    background-color:  #005883;
+    color: white;
+    
+}
+
+.titulo{
+    background-color: #F0B429 ;
+    color: white;
+    text-align: center;
+    width: 80%;
+    width: 100%;
+    padding: 10px;
+    font-size: large;
+}
+
+.columna{
+   text-align: start;
+}
+
+.piedepagina{
+    width: 100%;
+    padding: 10px;
+    font-size: small;
+    background-color:  #005883;
+    color: white;
+    text-align: center;
+}
+
