@@ -9,13 +9,25 @@
     width: 100%;
     padding: 10px;
     font-size: x-large;
-    background-color:  #005883;
+    background-color:  #005883; 
     color: white;
     
 }
 
 .titulo{
-    background-color: #F0B429 ;
+    background-color: #005883 ; 
+    /* background-color: #F0B4293; */
+    color: white;
+    text-align: center;
+    width: 100%;
+    /* width: 100%; */
+    padding: 10px;
+    font-size: large;
+}
+
+.subtitulo{
+    /* background-color: #005883 ;  */
+    background-color: #F47920;
     color: white;
     text-align: center;
     width: 80%;
@@ -37,6 +49,23 @@
     text-align: center;
 }
 
+div{
+    width: 43%;
+    margin: 2%;
+    padding: 1%;
+    /* float: left; */
+    display: inline-block;
+    vertical-align: top ;
+}
+img{
+    width: 111px;
+    height: 127px;
+}
+
+.autor {
+    text-align: center;
+}
+
 #menu, #menu ul{
     margin: 0;
     padding: 0;
@@ -44,7 +73,7 @@
 }
 
 #menu{
-    width: 90%;
+    width: 100%;
     margin: 60px auto;
     border: 1px solid #107677;
     background: #111;
